@@ -10,7 +10,7 @@ class Job:
     """An object representing a job in the system, containing a set of stages with dependencies stored in a dag."""
 
     def __init__(
-        self, id_: int, stages: list[Stage], dag: nx.DiGraph, t_arrival: float
+        self, id_: int, stages: list[Stage], dag: nx.DiGraph, t_arrival: float, query_num: int, query_size: int
     ) -> None:
         # unique identifier of this job
         self.id_ = id_
@@ -39,6 +39,9 @@ class Job:
 
         # count of stages who have no remaining tasks
         self.saturated_stage_count = 0
+
+        self.query_num = query_num
+        self.query_size = query_size
 
         self._init_frontier()
 
@@ -119,10 +122,10 @@ class Job:
 
         new_stages = set()
         # search through stage's children
-        for suc_stage_id in self.dag.successors(stage.id_):
+        for successor_stage_id in self.dag.successors(stage.id_):
             # if all dependencies are satisfied, then add this child to the frontier
-            new_stage = self.stages[suc_stage_id]
-            if not new_stage.completed and self._check_dependencies(suc_stage_id):
+            new_stage = self.stages[successor_stage_id]
+            if not new_stage.completed and self._check_dependencies(successor_stage_id):
                 new_stages.add(new_stage)
 
         return new_stages

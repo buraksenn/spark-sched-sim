@@ -1,7 +1,8 @@
 from bisect import bisect_left, bisect_right
 from collections import deque
 from collections.abc import Iterable, Callable
-from typing import Any
+from typing import Any, Dict, cast
+from typing_extensions import cast
 
 import numpy as np
 from gymnasium import Env
@@ -154,7 +155,7 @@ class SparkSchedSimEnv(Env):
             self.jobs[job.id_] = job
 
         self.job_arrival_cap = len(self.jobs.keys())
-        self.observation_space["source_job_idx"].n = self.job_arrival_cap + 1
+        self.observation_space["source_job_idx"].n = self.job_arrival_cap + 1  # type: ignore
         if self.renderer:
             self.renderer.num_total_jobs = self.job_arrival_cap
 
@@ -251,7 +252,7 @@ class SparkSchedSimEnv(Env):
         job_ptr = [0]
         for job in self.jobs.values():
             base_stage_idx = job_ptr[-1]
-            edges = np.vstack(job.dag.edges)
+            edges = np.vstack(list(job.dag.edges))
             edge_links += [base_stage_idx + edges]
             job_ptr += [base_stage_idx + job.num_stages]
         self.all_edge_links = np.vstack(edge_links)
@@ -400,8 +401,8 @@ class SparkSchedSimEnv(Env):
 
         # update stage action space to reflect the current number of active
         # stages
-        self.observation_space["dag_ptr"].feature_space.n = len(nodes) + 1
-        self.action_space["stage_idx"].n = len(nodes) + 1
+        self.observation_space["dag_ptr"].feature_space.n = len(nodes) + 1  # type: ignore
+        self.action_space["stage_idx"].n = len(nodes) + 1  # type: ignore
 
         return obs
 

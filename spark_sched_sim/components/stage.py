@@ -16,6 +16,7 @@ class Stage:
         self.num_executing_tasks = 0
         self.num_completed_tasks = 0
         self.is_schedulable = False
+        self.task_duration_data = None
 
     def __hash__(self) -> int:
         return hash(self.pool_key)

@@ -92,7 +92,7 @@ class TPCHDataSampler(DataSampler):
                     data, "first_wave", executor_key, warmup=True
                 )
 
-        if executor.task.stage_id == task.stage_id:
+        if executor.task.stage_id == task.stage_id: # type: ignore
             # the executor is continuing work on the same stage, which is relatively fast
             try:
                 return self._sample_task_duration(data, "rest_wave", executor_key)
@@ -174,8 +174,8 @@ class TPCHDataSampler(DataSampler):
         return np.mean(all_durations)
 
     def _sample_job(self, job_id, t_arrival):
-        query_num = 1 + self.np_random.integers(NUM_QUERIES)
-        query_size = self.np_random.choice(QUERY_SIZES)
+        query_num = 1 + self.np_random.integers(NUM_QUERIES)  # type: ignore
+        query_size = self.np_random.choice(QUERY_SIZES)  # type: ignore
         adj_mat, task_duration_data = self._load_query(query_num, query_size)
 
         num_stages = adj_mat.shape[0]
@@ -191,7 +191,7 @@ class TPCHDataSampler(DataSampler):
             self._pre_process_task_duration(data)
 
             # generate a node
-            stage = Stage(stage_id, job_id, num_tasks, self._rough_task_duration(data))
+            stage = Stage(stage_id, job_id, num_tasks, float(self._rough_task_duration(data)))
             stage.task_duration_data = data
             stages += [stage]
 
@@ -200,15 +200,13 @@ class TPCHDataSampler(DataSampler):
         for _, _, d in dag.edges(data=True):
             d.clear()
 
-        job = Job(job_id, stages, dag, t_arrival)
-        job.query_num = query_num
-        job.query_size = query_size
+        job = Job(job_id, stages, dag, t_arrival, query_num, query_size)
         return job
 
     def _sample_task_duration(self, data, wave, executor_key, warmup=False):
         """raises an exception if `executor_key` is not found in the durations from `wave`"""
         durations = data[wave][executor_key]
-        duration = self.np_random.choice(durations)
+        duration = self.np_random.choice(durations)  # type: ignore
         if warmup:
             duration += self.warmup_delay
         return duration
@@ -222,7 +220,7 @@ class TPCHDataSampler(DataSampler):
             executor_key = left_exec
         else:
             # faster than random.randint
-            rand_pt = 1 + int(self.np_random.random() * (right_exec - left_exec))
+            rand_pt = 1 + int(self.np_random.random() * (right_exec - left_exec))  # type: ignore
             if rand_pt <= num_local_executors - left_exec:
                 executor_key = left_exec
             else:
