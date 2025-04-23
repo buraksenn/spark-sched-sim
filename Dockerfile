@@ -1,29 +1,28 @@
-# Use CUDA-enabled base image
-FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
-
-# Set environment variables
-ENV DEBIAN_FRONTEND=noninteractive
-ENV PYTHONUNBUFFERED=1
-ENV PYTHONDONTWRITEBYTECODE=1
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    python3.13 \
-    python3-pip \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+# Use CUDA-enabled PyTorch base image
+FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-runtime
 
 # Set working directory
 WORKDIR /app
 
-# Copy requirements first to leverage Docker cache
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements file
 COPY requirements.txt .
 
 # Install Python dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
 COPY . .
 
-# Set the entrypoint for training
-ENTRYPOINT ["python3", "train.py"]
+# Create a directory for model checkpoints
+RUN mkdir -p /app/checkpoints
+
+# Set the entrypoint to run the training script
+ENTRYPOINT ["python", "train.py"]
+
+# Note: When running the container, mount a volume to /app/checkpoints to persist model checkpoints
+# Example: docker run --gpus all -v $(pwd)/checkpoints:/app/checkpoints spark-sched-sim

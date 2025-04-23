@@ -9,3 +9,5 @@ data/
 count_params.py
 eval*
 test/old_test.py
+slurms/
+scripts/

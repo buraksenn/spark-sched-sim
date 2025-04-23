@@ -12,7 +12,7 @@ import pathlib
 import numpy as np
 import torch
 import multiprocessing as mp
-from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard.writer import SummaryWriter
 
 from schedulers import make_scheduler, TrainableScheduler
 from .rollout_worker import RolloutWorkerSync, RolloutWorkerAsync, RolloutBuffer
@@ -140,7 +140,7 @@ class Trainer(ABC):
             # check if model is the current best
             if not best_state or avg_num_jobs < best_state["avg_num_jobs"]:
                 best_state = self._capture_state(
-                    i, avg_num_jobs, state_dict, rollout_stats_list
+                    i, avg_num_jobs, state_dict, rollout_stats_list # type: ignore
                 )
 
             if (i + 1) % self.checkpointing_freq == 0:
@@ -203,7 +203,7 @@ class Trainer(ABC):
         wall_times_list = tuple([wall_times[:-1] for wall_times in wall_times_list])
         baselines_list = self.baseline(wall_times_list, returns_list)
 
-        return {
+        return { # type: ignore
             "obsns_list": obsns_list,
             "actions_list": actions_list,
             "returns_list": returns_list,
