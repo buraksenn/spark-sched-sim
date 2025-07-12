@@ -113,16 +113,11 @@ class Trainer(ABC):
             # gather
             results = []
             for j, conn in enumerate(self.conns):
-                print(f"[DEBUG] Polling worker {j} for result...", flush=True)
-                if not conn.poll(60):  # 60 second timeout
-                    print(f"[ERROR] Timeout: Worker {j} did not respond within 60 seconds.", flush=True)
-                    exception = TimeoutError(f"Timeout waiting for worker {i}")
-                    break
-                print(f"[DEBUG] Receiving result from worker {j}...", flush=True)
+                print(f"[DEBUG] Iteration {i} Receiving result from worker {j}...", flush=True)
                 res = conn.recv()
-                print(f"[DEBUG] Received result from worker {j}.", flush=True)
+                print(f"[DEBUG] Iteration {i} Received result from worker {j}.", flush=True)
                 if isinstance(res, Exception):
-                    print(f"An exception occured in process {j}", flush=True)
+                    print(f"[ERROR] Iteration {i} An exception occured in process {j}", flush=True)
                     exception = res
                     break
                 results += [res]
@@ -130,6 +125,7 @@ class Trainer(ABC):
             if exception:
                 break
 
+            print(f"[DEBUG] Iteration {i} Got all results from {len(self.conns)} workers.", flush=True)
             rollout_buffers, rollout_stats_list = zip(
                 *[(res["rollout_buffer"], res["stats"]) for res in results if res]
             )

@@ -16,7 +16,7 @@ trainer:
   # `num_sequences` x `num_rollouts`
   #  = total number of rollouts per training iteration
   #  = number of rollout workers running in parallel
-  num_rollouts: 4
+  num_rollouts: 3
 
   # base random seed; each worker gets its own seed which is offset from this.
   seed: 42
