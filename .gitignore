@@ -9,3 +9,11 @@ data/
 count_params.py
 eval*
 test/old_test.py
+slurms/
+.env 
+
+.cursor/
+.cursorignore
+
+
+.idea/

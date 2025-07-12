@@ -85,3 +85,4 @@ env:
   warmup_delay: 1000.
   dataset: 'tpch'
   mean_time_limit: 2.e+7
+  data_sampler_cls: 'TPCHDataSampler'
