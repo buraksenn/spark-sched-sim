@@ -18,10 +18,18 @@ if ! command -v uv &> /dev/null; then
     log "Installing uv..."
     curl -LsSf https://astral.sh/uv/install.sh | sh
     check_error "Failed to install uv"
+    # add uv to path
+    export PATH="$HOME/.local/bin:$PATH"
+    check_error "Failed to add uv to path"
 fi
 
 # install new python version in venv 3.10
 uv python install 3.10
+check_error "Failed to install python 3.10"
+
+# activate venv
+uv venv
+check_error "Failed to activate venv"
 
 log "Installing requirements..."
 uv pip install -r requirements_wo_torch.txt
