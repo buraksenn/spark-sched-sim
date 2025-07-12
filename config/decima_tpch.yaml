@@ -26,7 +26,7 @@ trainer:
 
   # if checkpointing_freq = n, then every n iterations, the best model from the
   # past m iterations is saved
-  checkpointing_freq: 50
+  checkpointing_freq: 10
 
   # if true, then records training metrics to a tensorboard file
   use_tensorboard: False

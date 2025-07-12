@@ -112,10 +112,17 @@ class Trainer(ABC):
 
             # gather
             results = []
-            for i, conn in enumerate(self.conns):
+            for j, conn in enumerate(self.conns):
+                print(f"[DEBUG] Polling worker {j} for result...", flush=True)
+                if not conn.poll(60):  # 60 second timeout
+                    print(f"[ERROR] Timeout: Worker {j} did not respond within 60 seconds.", flush=True)
+                    exception = TimeoutError(f"Timeout waiting for worker {i}")
+                    break
+                print(f"[DEBUG] Receiving result from worker {j}...", flush=True)
                 res = conn.recv()
+                print(f"[DEBUG] Received result from worker {j}.", flush=True)
                 if isinstance(res, Exception):
-                    print(f"An exception occured in process {i}", flush=True)
+                    print(f"An exception occured in process {j}", flush=True)
                     exception = res
                     break
                 results += [res]
