@@ -41,29 +41,29 @@ uv pip install torch==2.1.0+cu118 -f https://download.pytorch.org/whl/torch_stab
 
 # Get PyTorch version
 log "Detecting PyTorch version..."
-TORCH_VERSION=$(python -c "import torch; print(torch.__version__)")
+TORCH_VERSION=$(uv run python -c "import torch; print(torch.__version__)")
 check_error "Failed to detect PyTorch version"
 log "Detected PyTorch version: $TORCH_VERSION"
 
 # Install dependencies
 log "Installing PyTorch Geometric dependencies..."
-pip install torch-scatter -f https://data.pyg.org/whl/torch-${TORCH_VERSION}.html
+uv pip install torch-scatter -f https://data.pyg.org/whl/torch-${TORCH_VERSION}.html
 check_error "Failed to install torch-scatter"
 
-pip install torch-sparse -f https://data.pyg.org/whl/torch-${TORCH_VERSION}.html
+uv pip install torch-sparse -f https://data.pyg.org/whl/torch-${TORCH_VERSION}.html
 check_error "Failed to install torch-sparse"
 
-pip install torch-cluster -f https://data.pyg.org/whl/torch-${TORCH_VERSION}.html
+uv pip install torch-cluster -f https://data.pyg.org/whl/torch-${TORCH_VERSION}.html
 check_error "Failed to install torch-cluster"
 
 # Install PyTorch Geometric
 log "Installing PyTorch Geometric..."
-pip install git+https://github.com/pyg-team/pytorch_geometric.git
+uv pip install git+https://github.com/pyg-team/pytorch_geometric.git
 check_error "Failed to install PyTorch Geometric"
 
 # Verify installations
 log "Verifying installations..."
-python3 -c "import torch; import torch_geometric; print('PyTorch version:', torch.__version__); print('PyTorch Geometric version:', torch_geometric.__version__)"
+uv run python -c "import torch; import torch_geometric; print('PyTorch version:', torch.__version__); print('PyTorch Geometric version:', torch_geometric.__version__)"
 check_error "Failed to verify installations"
 
 log "Installation completed successfully!"
