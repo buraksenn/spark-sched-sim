@@ -41,6 +41,15 @@ trainer:
   # PPO: hyperparameter for clamping the importance sampling ratio
   clip_range: .2
 
+  # PPO: adaptive clipping
+  adaptive_clip: False
+
+  # PPO: adaptive learning rate
+  adaptive_lr: False
+  # PPO: learning rate scheduler type
+  lr_scheduler_type: "cosine_warmup"
+
+
   # PPO: end training cycle if approximate KL divergence exceeds `target_kl`
   target_kl: .01
 
