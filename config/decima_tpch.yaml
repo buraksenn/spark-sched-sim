@@ -42,7 +42,7 @@ trainer:
   clip_range: .2
 
   # PPO: adaptive clipping
-  adaptive_clip: False
+  adaptive_clip: True
 
   # PPO: adaptive learning rate
   adaptive_lr: False
