@@ -19,7 +19,7 @@ trainer:
   num_rollouts: 3
 
   # base random seed; each worker gets its own seed which is offset from this.
-  seed: 42
+  seed: 20250718
 
   # name of directory where all training artifacts are saved (e.g. tensorboard)
   artifacts_dir: 'artifacts'
