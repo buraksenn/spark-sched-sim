@@ -10,4 +10,6 @@ done
 read -p "Enter the number of the config file to use: " config_num
 config_file=${config_files[$((config_num-1))]}
 
+echo "Using config file: $config_file"
+
 uv run python $GIT_ROOT/train.py -f $GIT_ROOT/config/$config_file
