@@ -45,7 +45,7 @@ trainer:
   adaptive_clip: False
 
   # PPO: adaptive learning rate
-  adaptive_lr: False
+  adaptive_lr: True
   # PPO: learning rate scheduler type
   lr_scheduler_type: "cosine_warmup"
 
