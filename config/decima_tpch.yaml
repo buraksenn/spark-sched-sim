@@ -49,6 +49,9 @@ trainer:
   # PPO: learning rate scheduler type
   lr_scheduler_type: "cosine_warmup"
 
+  # PPO: GAE parameter
+  gae_lambda: 0
+
 
   # PPO: end training cycle if approximate KL divergence exceeds `target_kl`
   target_kl: .01

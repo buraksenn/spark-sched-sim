@@ -56,6 +56,39 @@ class PPO(Trainer):
         optim_ref = getattr(self.scheduler, 'optim', None)
         self.initial_lr = optim_ref.param_groups[0]['lr'] if optim_ref is not None else 0.0
         self._current_iteration = 0
+        # GAE parameter
+        self.gae_lambda = train_cfg.get("gae_lambda", 0.95)
+
+    def _preprocess_rollouts(self, rollout_buffers):
+        """Extend base preprocessing with Generalized Advantage Estimation (GAE).
+
+        Computes per-step advantages using the exponential smoothing controlled by
+        `self.gae_lambda`. Falls back to simple returns-baseline difference when
+        `gae_lambda` is set to 0.
+        """
+        data = super()._preprocess_rollouts(rollout_buffers)
+
+        # If GAE is disabled, just return the parent preprocessing results.
+        if self.gae_lambda == 0:
+            return data
+
+        returns_list = data["returns_list"]
+        baselines_list = data["baselines_list"]
+
+        advantages_list = []
+        lam = self.gae_lambda
+
+        for returns, baselines in zip(returns_list, baselines_list):
+            advantages = np.zeros_like(returns)
+            gae = 0.0
+            for t in reversed(range(len(returns))):
+                delta = returns[t] - baselines[t]
+                gae = delta + lam * gae
+                advantages[t] = gae
+            advantages_list.append(advantages)
+
+        data["advantages_list"] = tuple(advantages_list)
+        return data
 
     def train_on_rollouts(self, rollout_buffers):
         # Update learning rate for this iteration
@@ -64,13 +97,18 @@ class PPO(Trainer):
         
         data = self._preprocess_rollouts(rollout_buffers)
 
-        returns = np.array(list(chain(*data["returns_list"])))
-        baselines = np.concatenate(data["baselines_list"])
+        # Use GAE advantages if available, otherwise default to returns-baseline.
+        if "advantages_list" in data:
+            advgs_flat = list(chain(*data["advantages_list"]))
+        else:
+            returns_flat = np.array(list(chain(*data["returns_list"])))
+            baselines_flat = np.concatenate(data["baselines_list"])
+            advgs_flat = returns_flat - baselines_flat
 
         dataset = RolloutDataset(
             obsns=list(chain(*data["obsns_list"])),
             acts=list(chain(*data["actions_list"])),
-            advgs=returns - baselines,
+            advgs=advgs_flat,
             lgprobs=list(chain(*data["lgprobs_list"])),
         )
 
