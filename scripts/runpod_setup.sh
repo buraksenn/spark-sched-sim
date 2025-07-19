@@ -66,14 +66,6 @@ log "Verifying installations..."
 uv run python -c "import torch; import torch_geometric; print('PyTorch version:', torch.__version__); print('PyTorch Geometric version:', torch_geometric.__version__)"
 check_error "Failed to verify installations"
 
-# install neovim
-log "Installing neovim..."
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-rm -rf /opt/nvim
-tar -C /opt -xzf nvim-linux-x86_64.tar.gz
-
-
-
 log "Installation completed successfully!"
 
 
