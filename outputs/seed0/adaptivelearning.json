@@ -1,0 +1,252 @@
+[
+  {
+    "checkpoint": "10",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/10/model.pt",
+    "avg_job_duration": 2263.9981846595706
+  },
+  {
+    "checkpoint": "20",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/20/model.pt",
+    "avg_job_duration": 1132.312642472303
+  },
+  {
+    "checkpoint": "30",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/30/model.pt",
+    "avg_job_duration": 1134.5697726959488
+  },
+  {
+    "checkpoint": "40",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/40/model.pt",
+    "avg_job_duration": 947.4117026050033
+  },
+  {
+    "checkpoint": "50",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/50/model.pt",
+    "avg_job_duration": 894.1985826050031
+  },
+  {
+    "checkpoint": "60",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/60/model.pt",
+    "avg_job_duration": 814.0776052395626
+  },
+  {
+    "checkpoint": "70",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/70/model.pt",
+    "avg_job_duration": 993.9624826050033
+  },
+  {
+    "checkpoint": "80",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/80/model.pt",
+    "avg_job_duration": 736.9976626050035
+  },
+  {
+    "checkpoint": "90",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/90/model.pt",
+    "avg_job_duration": 806.1813036322869
+  },
+  {
+    "checkpoint": "100",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/100/model.pt",
+    "avg_job_duration": 649.7253726959489
+  },
+  {
+    "checkpoint": "110",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/110/model.pt",
+    "avg_job_duration": 782.8224426050034
+  },
+  {
+    "checkpoint": "120",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/120/model.pt",
+    "avg_job_duration": 634.1541726959488
+  },
+  {
+    "checkpoint": "130",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/130/model.pt",
+    "avg_job_duration": 620.5825680068223
+  },
+  {
+    "checkpoint": "140",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/140/model.pt",
+    "avg_job_duration": 700.9695966231924
+  },
+  {
+    "checkpoint": "150",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/150/model.pt",
+    "avg_job_duration": 582.5973326959488
+  },
+  {
+    "checkpoint": "160",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/160/model.pt",
+    "avg_job_duration": 664.5486880068223
+  },
+  {
+    "checkpoint": "170",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/170/model.pt",
+    "avg_job_duration": 604.4834734086412
+  },
+  {
+    "checkpoint": "180",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/180/model.pt",
+    "avg_job_duration": 597.0192096140978
+  },
+  {
+    "checkpoint": "190",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/190/model.pt",
+    "avg_job_duration": 612.4361026050034
+  },
+  {
+    "checkpoint": "200",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/200/model.pt",
+    "avg_job_duration": 596.4799294813976
+  },
+  {
+    "checkpoint": "210",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/210/model.pt",
+    "avg_job_duration": 588.8931642122789
+  },
+  {
+    "checkpoint": "220",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/220/model.pt",
+    "avg_job_duration": 559.7846326959489
+  },
+  {
+    "checkpoint": "230",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/230/model.pt",
+    "avg_job_duration": 553.5217094813976
+  },
+  {
+    "checkpoint": "240",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/240/model.pt",
+    "avg_job_duration": 592.7863026050034
+  },
+  {
+    "checkpoint": "250",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/250/model.pt",
+    "avg_job_duration": 634.6718426050033
+  },
+  {
+    "checkpoint": "260",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/260/model.pt",
+    "avg_job_duration": 620.0732626050034
+  },
+  {
+    "checkpoint": "270",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/270/model.pt",
+    "avg_job_duration": 554.1041226050033
+  },
+  {
+    "checkpoint": "280",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/280/model.pt",
+    "avg_job_duration": 632.9810826050033
+  },
+  {
+    "checkpoint": "290",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/290/model.pt",
+    "avg_job_duration": 608.0549026050033
+  },
+  {
+    "checkpoint": "300",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/300/model.pt",
+    "avg_job_duration": 662.0431026050034
+  },
+  {
+    "checkpoint": "310",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/310/model.pt",
+    "avg_job_duration": 589.2751418923109
+  },
+  {
+    "checkpoint": "320",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/320/model.pt",
+    "avg_job_duration": 587.1775626050033
+  },
+  {
+    "checkpoint": "330",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/330/model.pt",
+    "avg_job_duration": 644.1958226050034
+  },
+  {
+    "checkpoint": "340",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/340/model.pt",
+    "avg_job_duration": 621.6018426050034
+  },
+  {
+    "checkpoint": "350",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/350/model.pt",
+    "avg_job_duration": 596.1263398377437
+  },
+  {
+    "checkpoint": "360",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/360/model.pt",
+    "avg_job_duration": 582.5698626050033
+  },
+  {
+    "checkpoint": "370",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/370/model.pt",
+    "avg_job_duration": 563.6981080068223
+  },
+  {
+    "checkpoint": "380",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/380/model.pt",
+    "avg_job_duration": 589.1255426050033
+  },
+  {
+    "checkpoint": "390",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/390/model.pt",
+    "avg_job_duration": 556.0839026050032
+  },
+  {
+    "checkpoint": "400",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/400/model.pt",
+    "avg_job_duration": 551.3121226050033
+  },
+  {
+    "checkpoint": "410",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/410/model.pt",
+    "avg_job_duration": 546.3111226050033
+  },
+  {
+    "checkpoint": "420",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/420/model.pt",
+    "avg_job_duration": 525.7787026050032
+  },
+  {
+    "checkpoint": "430",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/430/model.pt",
+    "avg_job_duration": 517.1373738559328
+  },
+  {
+    "checkpoint": "440",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/440/model.pt",
+    "avg_job_duration": 532.76362729413
+  },
+  {
+    "checkpoint": "450",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/450/model.pt",
+    "avg_job_duration": 506.6179880068222
+  },
+  {
+    "checkpoint": "460",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/460/model.pt",
+    "avg_job_duration": 514.6051026050033
+  },
+  {
+    "checkpoint": "470",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/470/model.pt",
+    "avg_job_duration": 520.8269226050033
+  },
+  {
+    "checkpoint": "480",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/480/model.pt",
+    "avg_job_duration": 534.5790426050032
+  },
+  {
+    "checkpoint": "490",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/490/model.pt",
+    "avg_job_duration": 537.5688626050033
+  },
+  {
+    "checkpoint": "500",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed0/adaptivelearning/checkpoints/500/model.pt",
+    "avg_job_duration": 618.1236126959489
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "checkpoint": "10",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/10/model.pt",
+    "avg_job_duration": 1984.9303484541138
+  },
+  {
+    "checkpoint": "20",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/20/model.pt",
+    "avg_job_duration": 920.3337880068221
+  },
+  {
+    "checkpoint": "30",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/30/model.pt",
+    "avg_job_duration": 844.0687026050034
+  },
+  {
+    "checkpoint": "40",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/40/model.pt",
+    "avg_job_duration": 844.80614729413
+  },
+  {
+    "checkpoint": "50",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/50/model.pt",
+    "avg_job_duration": 884.8044026050035
+  },
+  {
+    "checkpoint": "60",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/60/model.pt",
+    "avg_job_duration": 816.1916256868542
+  },
+  {
+    "checkpoint": "70",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/70/model.pt",
+    "avg_job_duration": 675.1967026050032
+  },
+  {
+    "checkpoint": "80",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/80/model.pt",
+    "avg_job_duration": 659.1190426050033
+  },
+  {
+    "checkpoint": "90",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/90/model.pt",
+    "avg_job_duration": 625.2196626050032
+  },
+  {
+    "checkpoint": "100",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/100/model.pt",
+    "avg_job_duration": 689.8341080068222
+  },
+  {
+    "checkpoint": "110",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/110/model.pt",
+    "avg_job_duration": 659.6834626050033
+  },
+  {
+    "checkpoint": "120",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/120/model.pt",
+    "avg_job_duration": 578.9770226050033
+  },
+  {
+    "checkpoint": "130",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/130/model.pt",
+    "avg_job_duration": 609.0558938559327
+  },
+  {
+    "checkpoint": "140",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/140/model.pt",
+    "avg_job_duration": 557.2514826050033
+  },
+  {
+    "checkpoint": "150",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/150/model.pt",
+    "avg_job_duration": 571.4120426050033
+  },
+  {
+    "checkpoint": "160",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/160/model.pt",
+    "avg_job_duration": 597.1906226050033
+  },
+  {
+    "checkpoint": "170",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/170/model.pt",
+    "avg_job_duration": 532.5434690341059
+  },
+  {
+    "checkpoint": "180",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/180/model.pt",
+    "avg_job_duration": 555.0927226050034
+  },
+  {
+    "checkpoint": "190",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/190/model.pt",
+    "avg_job_duration": 525.0992144359248
+  },
+  {
+    "checkpoint": "200",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/200/model.pt",
+    "avg_job_duration": 592.9017100613895
+  },
+  {
+    "checkpoint": "210",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/210/model.pt",
+    "avg_job_duration": 541.6425868468383
+  },
+  {
+    "checkpoint": "220",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/220/model.pt",
+    "avg_job_duration": 550.4147802850352
+  },
+  {
+    "checkpoint": "230",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/230/model.pt",
+    "avg_job_duration": 586.2513226050033
+  },
+  {
+    "checkpoint": "240",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/240/model.pt",
+    "avg_job_duration": 582.1184726959488
+  },
+  {
+    "checkpoint": "250",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/250/model.pt",
+    "avg_job_duration": 603.7240334086412
+  },
+  {
+    "checkpoint": "260",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/260/model.pt",
+    "avg_job_duration": 530.0063626050033
+  },
+  {
+    "checkpoint": "270",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/270/model.pt",
+    "avg_job_duration": 564.9610826050034
+  },
+  {
+    "checkpoint": "280",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/280/model.pt",
+    "avg_job_duration": 562.5371056868543
+  },
+  {
+    "checkpoint": "290",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/290/model.pt",
+    "avg_job_duration": 614.1285934086412
+  },
+  {
+    "checkpoint": "300",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/300/model.pt",
+    "avg_job_duration": 558.9574348832165
+  },
+  {
+    "checkpoint": "310",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/310/model.pt",
+    "avg_job_duration": 586.1954480068223
+  },
+  {
+    "checkpoint": "320",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/320/model.pt",
+    "avg_job_duration": 593.3050926959489
+  },
+  {
+    "checkpoint": "330",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/330/model.pt",
+    "avg_job_duration": 624.5509026050033
+  },
+  {
+    "checkpoint": "340",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/340/model.pt",
+    "avg_job_duration": 575.9099310886731
+  },
+  {
+    "checkpoint": "350",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/350/model.pt",
+    "avg_job_duration": 570.84541881046
+  },
+  {
+    "checkpoint": "360",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/360/model.pt",
+    "avg_job_duration": 531.2414426050033
+  },
+  {
+    "checkpoint": "370",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/370/model.pt",
+    "avg_job_duration": 583.4569426050034
+  },
+  {
+    "checkpoint": "380",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/380/model.pt",
+    "avg_job_duration": 528.6700126959488
+  },
+  {
+    "checkpoint": "390",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/390/model.pt",
+    "avg_job_duration": 526.8171280068223
+  },
+  {
+    "checkpoint": "400",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/400/model.pt",
+    "avg_job_duration": 582.8774602850353
+  },
+  {
+    "checkpoint": "410",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/410/model.pt",
+    "avg_job_duration": 555.5374026050032
+  },
+  {
+    "checkpoint": "420",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/420/model.pt",
+    "avg_job_duration": 620.4809878741219
+  },
+  {
+    "checkpoint": "430",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/430/model.pt",
+    "avg_job_duration": 538.3944026050034
+  },
+  {
+    "checkpoint": "440",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/440/model.pt",
+    "avg_job_duration": 548.8834202850353
+  },
+  {
+    "checkpoint": "450",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/450/model.pt",
+    "avg_job_duration": 539.7868026050033
+  },
+  {
+    "checkpoint": "460",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/460/model.pt",
+    "avg_job_duration": 649.0295826050033
+  },
+  {
+    "checkpoint": "470",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/470/model.pt",
+    "avg_job_duration": 531.8280626050033
+  },
+  {
+    "checkpoint": "480",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/480/model.pt",
+    "avg_job_duration": 556.6007626050033
+  },
+  {
+    "checkpoint": "490",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/490/model.pt",
+    "avg_job_duration": 548.4447598377437
+  },
+  {
+    "checkpoint": "500",
+    "model_path": "/Users/buraksen/d/thesis/artifacts/seed2/both/checkpoints/500/model.pt",
+    "avg_job_duration": 530.3540626050034
+  }
+]
