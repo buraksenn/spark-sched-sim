@@ -1,0 +1,8 @@
+,initial_performance,initial_performance,final_performance,final_performance,best_performance,best_performance,relative_improvement_pct,relative_improvement_pct,improvement_rate_per_checkpoint,improvement_rate_per_checkpoint,convergence_efficiency_pct,convergence_efficiency_pct,performance_variance,performance_variance
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,,,,,,,,,,,,,,
+adaptiveclipping,2063.73,375.57,589.92,28.32,521.82,27.76,70.79,5.37,29.48,7.69,95.23,2.26,57787.78,24345.74
+adaptivelearning,2096.35,315.55,559.06,51.38,511.84,13.8,72.99,3.99,30.75,6.0,97.26,3.14,65762.56,5889.17
+both,1962.36,506.94,553.34,25.46,513.66,15.02,70.25,9.31,23.94,6.05,96.78,3.18,49052.2,17033.35
+generalized,1968.09,595.06,623.38,87.32,498.58,2.3,66.11,14.68,22.58,19.74,89.42,10.37,64421.5,41033.15
+vanilla,1873.47,538.55,529.8,15.25,514.46,15.63,70.02,8.94,26.87,10.47,98.95,1.03,50899.79,27233.62
